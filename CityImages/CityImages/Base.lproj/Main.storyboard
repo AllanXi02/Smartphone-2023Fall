@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CityImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UB1-CK-K1I">
+                                <rect key="frame" x="5" y="64" width="383" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="MPV-15-Uwd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="muj-n1-dio"/>
+                                    <constraint firstAttribute="height" constant="250" id="nQn-AI-Kbe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-uC-208">
+                                <rect key="frame" x="42" y="451" width="310" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Austin"/>
+                                <connections>
+                                    <action selector="austinimage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vK-8c-h0R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0u-2E-Het">
+                                <rect key="frame" x="153" y="580" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Los Angeles"/>
+                                <connections>
+                                    <action selector="LAimage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SjQ-ce-DeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lha-o0-h9w">
+                                <rect key="frame" x="156" y="494" width="97" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New York"/>
+                                <connections>
+                                    <action selector="NYimage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9n-AO-ctj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-Z8-0qS">
+                                <rect key="frame" x="153" y="537" width="102" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Las Vegas"/>
+                                <connections>
+                                    <action selector="LasVegas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AE9-y2-sWn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZo-q4-VL2">
+                                <rect key="frame" x="158" y="319" width="77.333333333333314" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZzJ-pF-YOD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Seattle"/>
+                                <connections>
+                                    <action selector="seattleimage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIy-Ax-oz9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UB1-CK-K1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="6pF-el-xqj"/>
+                            <constraint firstItem="SZo-q4-VL2" firstAttribute="top" secondItem="UB1-CK-K1I" secondAttribute="bottom" constant="20" id="8rg-ho-rBL"/>
+                            <constraint firstItem="SZo-q4-VL2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N9Z-bj-LRq"/>
+                            <constraint firstItem="SZo-q4-VL2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfQ-9h-72g"/>
+                            <constraint firstItem="SZo-q4-VL2" firstAttribute="top" secondItem="UB1-CK-K1I" secondAttribute="bottom" constant="5" id="iXK-rS-eKw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViews" destination="UB1-CK-K1I" id="1pe-ub-gmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

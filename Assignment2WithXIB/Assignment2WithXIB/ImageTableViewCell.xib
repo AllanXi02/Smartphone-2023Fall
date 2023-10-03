@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="ImageTableViewCell" customModule="Assignment2WithXIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="582" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="582" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naan" translatesAutoresizingMaskIntoConstraints="NO" id="OAP-xj-5El">
+                        <rect key="frame" x="5" y="5" width="572" height="205"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="dvt-UC-84l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-Xy-ayr">
+                        <rect key="frame" x="5" y="215" width="572" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Dgh-Ic-EW6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OAP-xj-5El" secondAttribute="trailing" constant="5" id="7xj-IH-CM1"/>
+                    <constraint firstAttribute="trailing" secondItem="gWG-Xy-ayr" secondAttribute="trailing" constant="5" id="KFJ-yB-sDN"/>
+                    <constraint firstItem="gWG-Xy-ayr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Yof-re-rLI"/>
+                    <constraint firstAttribute="bottom" secondItem="gWG-Xy-ayr" secondAttribute="bottom" constant="5" id="cPE-5j-BSK"/>
+                    <constraint firstItem="gWG-Xy-ayr" firstAttribute="top" secondItem="OAP-xj-5El" secondAttribute="bottom" constant="5" id="fZv-E7-M59"/>
+                    <constraint firstItem="OAP-xj-5El" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gKm-fy-A7k"/>
+                    <constraint firstItem="OAP-xj-5El" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="uBG-4L-6Uf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="OAP-xj-5El" id="BFT-qE-XtA"/>
+                <outlet property="lblImage" destination="gWG-Xy-ayr" id="Hvv-hp-TLR"/>
+            </connections>
+            <point key="canvasLocation" x="329.7709923664122" y="61.267605633802823"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Naan" width="244.33332824707031" height="153.33332824707031"/>
+    </resources>
+</document>
